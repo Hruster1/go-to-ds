@@ -3,6 +3,10 @@ body{
 	background-repeat: repeat;
 	overflow-X: hidden;
 }
+section{
+	position: relative;
+	bottom: 30px;
+}
 .divs{
 	background: #2e2d34;
 	border-radius: 50px;
@@ -10,8 +14,8 @@ body{
 }
 #main-div{
 	width: 1000px;
-	height: 770px;
-	margin: 100px auto;
+	height: 780px;
+	margin: 90px auto;
 }
 #div2{
 	width: 500px;
@@ -33,7 +37,6 @@ body{
 	background: #34333b;
 }
 #div5{
-	
 	width: 400px;
 	height: 150px;
 	text-align: left;
@@ -48,27 +51,84 @@ body{
 	font-family: 'gothamxnarrow_black';
 	src: url(sitefiles/gothamxnarrow_black.otf);
 }
+p{
+	opacity: 0;
+	position: absolute;
+	left: 90px;
+	margin-top: 0px;
+	color: white;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	font-family: 'Proxima_Nova_Black_Italic';
+	transition: 1s;
+	text-align: center;
+	font-size: 13px;
+}
+#p2{
+	margin-left: 65px;
+}
+#p3{
+	margin-left: 130px;
+}
+#p4{
+	margin-left: 185px;
+}
+
+.imgsot{
+	display: inline-block;
+    height: 50px;
+    width: 58px;
+    margin: 0 auto;
+}
+.imgsot:hover p{
+	opacity: 0.6;
+	transition: 0.2s opacity ease-in;
+	transform: scale(1.1);
+}
 h1 {
+	display: inline-block;
+	position: relative;
 	font-family: 'Proxima_Nova_Black_Italic';
 	font-size: 80px;
-	padding-top: 40px;
 	color:	lightgray;
+	cursor: pointer;
+	bottom: 10px;
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+h1:hover{
+	color: white;
+
 }
 h2{
 	position: relative;
-	bottom: 50px;
+	bottom: 85px;
 	font-family: 'Proxima_Nova_Black_Italic';
-	font-size: 30px;	
+	font-size: 30px;
 	color:	#999999;
+	cursor: default;
+
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 h3{
+	font-family: 'Proxima_Nova_Black_Italic';
+	font-size: 25px;	
+	color:	lightgray;
+	cursor: pointer;
+}
+h4{
 	font-family: 'Proxima_Nova_Black_Italic';
 	font-size: 25px;	
 	color:	lightgray;
 }
 hr{
 	position: relative;
-	bottom: 20px;
+	bottom: 50px;
 	border: none; /* Убираем границу для браузера Firefox */
     color: #232126; /* Цвет линии для остальных браузеров */
     background-color: #232126; /* Цвет линии для браузера Firefox и Opera */
@@ -112,37 +172,90 @@ li a{
 	border-radius: 50%;
 	margin: 20px;
 	border: 5px solid #34333b;
+	position: relative;
+	bottom: 60px;
+
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;  
 }
+
 #dsid{
+	position: relative;
+	top: 5px;
 	margin-top: 60px;
-	background: #585858;
-	height: 38px;
+}
+#sottxt:hover{
+	transform: translateY(-5px);
+    transition: 1s ease;
+}
+#friends:hover{
+	transform: translateY(-5px);
+    transition: 1s ease;
+}
+#what:hover{
+	transform: translateY(-5px);
+    transition: 1s ease;
+}
+#url:hover{
+	transform: translateY(-5px);
+    transition: 1s ease;
 }
 #ds{
 	position: relative;
-	top: 3px;
-	margin-top: 6px;
-	margin-left: 8px;
+	bottom: 46px;
+	left: 151px;
 	width: 22px;
+    transition: 1s ease;
+    cursor: pointer;
+
+   -moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;  
+}
+#ds:hover{
+	transform: translateY(-8px);
+    transition: 1s ease;
+}
+#prof{
+	background: #585858;
+	height: 38px;
 }
 .sot{
 	width: 50px;
 	margin-left: 10px;
 	border-radius: 50%;
+	opacity: 1;
+	transition: 1s;
+
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;  
 }
 .sot:hover {
+	opacity: 0.8;
+	transition: 0.2s opacity ease-in;
 	transform: scale(1.1);
 }
 #url{
 	padding-top: 10px;
+	transition: 1s ease;
+}
+.url2:hover{
+	opacity: 0.8;
+}
+.url3{
+
 }
 #what{
 	margin: 0;
+	transition: 1s ease;
 }
 #sot-panel{
 	position: relative;
-	right: 100px;
+	right: 110px;
 	width: 500px;
+
 }
 #sot-panel2{
 	margin-left: 15%;
@@ -153,27 +266,60 @@ li a{
 #sot-panel{
 	position: relative;
 	top: 10px;
-	left: 40px;
 }
 #sottxt{
 	position: relative;
 	top: 20px;
 	right: 40px;
+	transition: 1s ease;
 }
 #friends{
 	text-align: center;
 	padding-top: 10px;
-	
+	transition: 1s ease;
 }
 .friend{
 	font-size: 15px;
 }
-
+#beta{
+	position: fixed;
+	bottom: 0px;
+	font-size: 20px;
+	opacity: 0.5;
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+#sot-p1{
+	position: absolute;
+	right: 45%;
+}
+#sot-p2{
+	position: absolute;
+	right: 20%;
+}
+#sot-p3{
+	position: absolute;
+	left: 57%;
+}
+#sot-p4{
+	position: absolute;
+	left: 68%;
+}
+#sot-p5{
+	position: absolute;
+	left: 80%;
+}
 @media(max-width: 1000px) {
 	#main-div{
 		width: 700px;
-		height: 1350px;
+		height: 1400px;
 		margin: 0 auto;
+	}
+	#sot-group{
+		position: relative;
+		left: 40px;
 	}
 	#div2{
 		width: 500px;
@@ -205,6 +351,19 @@ li a{
 	#sot-panel2{
 		margin-left: 23%;
 	}
+	#p1{
+		margin-left: 7%;
+	}
+	#p2{
+		margin-left: 20%;
+	}
+	#p3{
+		margin-left: 32%;
+	}
+	#p4{
+		margin-left: 44%;
+	}
+
 
 	section{
 		display: flex;
@@ -220,10 +379,14 @@ li a{
 		height: 1400px;
 		margin: 0 auto;
 	}
+
 	#div2{
 		width: 320px;
 		height: 350px;
-
+	}
+	#sot-group{
+		position: relative;
+		left: 0px;
 	}
 	#div3{
 		width: 320px;
@@ -246,7 +409,7 @@ li a{
 	}
 	#sot-panel{
 		position: relative;
-		left: 0;
+		right: 150px;
 	}
 	#div5{
 		width: 300px;
@@ -264,11 +427,31 @@ li a{
 	#dsid{
 		font-size: 20px;
 	}
+	#ds{
+		position: relative;
+		bottom: 38px;
+		left: 120px;
+	}
 	h2{
 		font-size: 20px;
 	}
 	li{
 		font-size: 17px;
+	}
+	#p1{
+		margin-left: -20%;
+	}
+	#p2{
+		margin-left: 5px;
+	}
+	#p3{
+		margin-left: 70px;
+	}
+	#p4{
+		margin-left: 42%;
+	}
+	#beta{
+		font-size: 18px;
 	}
 }
 @media(max-width: 356px){
@@ -302,29 +485,77 @@ li a{
 		margin: 0 auto;
 	}
 	#sottxt{
-		font-size: 20px;
+		font-size: 17px;
 		position: relative;
-		right: 65px;
+		right: 50px;
+		top: 20	px;
 	}
 	#sot-panel{
 		position: relative;
-		left: 5px;
+		right: 127px;
+		top: 20px;
 	}
 	.sot{
 		width: 40px;
+		margin-left: 10px;
+	}
+	#sot2{
+		margin-left: 25px;
 	}
 	h2{
 		font-size: 20px;
 	}
+	.imgsot{
+		width: 50px;
+	}
 	#dsid{
 		font-size: 18px;
-	}
-	#sottxt{
-		font-size: 16px;
 	}
 	#ava{
 		width: 80px;
 		position: relative	;
-		top: 18px;
+		bottom: 50px;
 	}
+	#ds{
+		position: relative;
+		left: 110px;
+		bottom: 35px;
+	}
+	#p1{
+		margin-left: -20%;
+	}
+	#p2{
+		margin-left: -5px;
+	}
+	#p3{
+		margin-left: 55px;
+	}
+	#p4{
+		margin-left: 41%;
+	}
+	#beta{
+		font-size: 16px;
+	}
+	#sot-p1{
+		position: absolute;
+		right: 55%;
+	}
+	#sot-p2{
+		position: absolute;
+		right: 33%;
+	}
+	#sot-p3{
+		position: absolute;
+		left: 49%;
+	}
+	#sot-p4{
+		position: absolute;
+		left: 58%;
+	}
+	#sot-p5{
+		position: absolute;
+		left: 68%;
+	}
+
 }
+
