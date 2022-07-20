@@ -77,9 +77,9 @@ p{
 
 .imgsot{
 	display: inline-block;
-    	height: 50px;
-    	width: 58px;
-    	margin: 0 auto;
+    height: 50px;
+    width: 58px;
+    margin: 0 auto;
 }
 .imgsot:hover p{
 	opacity: 0.6;
@@ -130,9 +130,9 @@ hr{
 	position: relative;
 	bottom: 50px;
 	border: none; /* Убираем границу для браузера Firefox */
-    	color: #232126; /* Цвет линии для остальных браузеров */
-    	background-color: #232126; /* Цвет линии для браузера Firefox и Opera */
-    	height: 8px; /* Толщина линии */
+    color: #232126; /* Цвет линии для остальных браузеров */
+    background-color: #232126; /* Цвет линии для браузера Firefox и Opera */
+    height: 8px; /* Толщина линии */
 }
 
 li{
@@ -185,29 +185,34 @@ li a{
 	top: 5px;
 	margin-top: 60px;
 }
+#sottxt{
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
 #sottxt:hover{
 	transform: translateY(-5px);
-    	transition: 1s ease;
+    transition: 1s ease;
 }
 #friends:hover{
 	transform: translateY(-5px);
-    	transition: 1s ease;
+    transition: 1s ease;
 }
 #what:hover{
 	transform: translateY(-5px);
-    	transition: 1s ease;
+    transition: 1s ease;
 }
 #url:hover{
 	transform: translateY(-5px);
-    	transition: 1s ease;
+    transition: 1s ease;
 }
 #ds{
 	position: relative;
 	bottom: 46px;
 	left: 151px;
 	width: 22px;
-    	transition: 1s ease;
-    	cursor: pointer;
+    transition: 1s ease;
+    cursor: pointer;
 
    	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -215,7 +220,7 @@ li a{
 }
 #ds:hover{
 	transform: translateY(-8px);
-    	transition: 1s ease;
+    transition: 1s ease;
 }
 #prof{
 	background: #585858;
@@ -240,6 +245,10 @@ li a{
 #url{
 	padding-top: 10px;
 	transition: 1s ease;
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 .url2:hover{
 	opacity: 0.8;
@@ -250,6 +259,10 @@ li a{
 #what{
 	margin: 0;
 	transition: 1s ease;
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 #sot-panel{
 	position: relative;
@@ -277,6 +290,10 @@ li a{
 	text-align: center;
 	padding-top: 10px;
 	transition: 1s ease;
+	
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 .friend{
 	font-size: 15px;
@@ -558,4 +575,5 @@ li a{
 	}
 
 }
+
 
